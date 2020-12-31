@@ -1,20 +1,36 @@
+<!doctype html>
+
+
+
+
 <head>
-<script type="text/javascript">
- var myJmol = 'myJmol';
- var JmolInfo = {
- width:'100%',
- height:'100%',
- color:'#E2F4F5',
- j2sPath:'../j2s',
- serverURL:'../php/jsmol.php',
- use:'html5'
-}
-$(document).ready(function(){
-  $('#JmolDiv').html( Jmol.getAppletHtml(myJmol, JmolInfo) );
-  Jmol.script(myJmol, 'load ../model/caffeine.xyz');
-});
-</script>
+
+  <title> Stuy Proteomics </title>
+
+  <script src="/jsmol/JSmol.min.js"></script>
+
+  <script src="/jsmol/js/Jmol2.js"></script>
+
+  <script> jmolInitialize("/jsmol");</script>
+
 </head>
+
+
+
+
 <body>
-<div id="JmolDiv" style="width:30vmin; height:30vmin;"></div>
+
+Welcome!
+
+<script>
+
+jmolApplet(400,load "ioil.pdb","0");
+
+</script>
+
+
+
+
 </body>
+
+</html>
