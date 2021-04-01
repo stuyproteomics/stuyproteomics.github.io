@@ -20,11 +20,12 @@
 
 <body>
 
-Welcome!
+  <p>Welcome!</p>
+  <p>Displayed below is the <strong>lipase</strong> from the bacterium <i>Burkholderia cepacia</i>.</p>
 
 <script>
 
-jmolApplet(600, 'background [xffffff]; load 1oil.pdb; set antialiasdisplay true; set frank off; select all; hbonds off; spin off; wireframe off; spacefill off; trace off; set ambient 40; set specpower 40; slab off; ribbons off; cartoons on; label off; monitor off;')
+jmolApplet(600, 'background [xffffff]; load 1oil.pdb; set antialiasdisplay true; set frank off; select all; hbonds off; spin off; wireframe off; spacefill off; trace off; set ambient 40; set specpower 40; slab off; ribbons off; cartoons on; label off; monitor off; color chains;')
 </script>
 
 
